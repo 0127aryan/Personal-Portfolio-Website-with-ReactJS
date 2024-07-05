@@ -14,7 +14,7 @@ const Tech = () => {
       )})}
 
     </div>
-  )
+  );
 }
 
-export default SectionWrapper (Tech, " ");
+export default SectionWrapper(Tech, " ");

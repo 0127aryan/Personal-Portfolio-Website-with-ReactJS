@@ -1,10 +1,14 @@
+import React from 'react';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 import CanvasLoader from '../Loader';
+import { SectionWrapper } from '../../hoc';
 
-const Ball = ({ imgUrl }) => {
-  const [decalTexture] = useTexture(imgUrl);
+//const Ball = ({ imgUrl }) => {
+  //const [decalTexture] = useTexture(imgUrl);
+const Ball = (props) => {
+  const [Decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -44,4 +48,4 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
-export default BallCanvas;
+export default SectionWrapper(BallCanvas);

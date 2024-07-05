@@ -176,7 +176,7 @@ import {
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: "https://media.licdn.com/dms/image/D5603AQElsM-i3mqWsg/profile-displayphoto-shrink_800_800/0/1720179121199?e=1725494400&v=beta&t=3PkvVbMmpw2X7UiZUVaEQQ1VNxrZveuN1hmMGwUVdLY",
     },
     {
       testimonial:
