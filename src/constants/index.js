@@ -1,7 +1,7 @@
 import {
     mobile,
     backend,
-    creator,
+    cinkod,
     web,
     javascript,
     typescript,
@@ -13,17 +13,21 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    // figma,
+    // docker,
+    //meta,
+    //starbucks,
+    //tesla,
+    //shopify,
+    //carrent,
+    //jobit,
+    //tripguide,
     threejs,
+    deployment_link,
+    github,
+    vercel,
   } from "../assets";
+
   
   export const navLinks = [
     {
@@ -38,28 +42,36 @@ import {
       id: "contact",
       title: "Contact",
     },
+    // {
+    //   id: "resume", //add resume pdf in components
+    //   title: "Resume",
+    // }
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Mern Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Android Application Developer",
       icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    // {
+    //   title: "Content Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
     {
       name: "HTML 5",
       icon: html,
@@ -104,162 +116,99 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+   
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Community Manager",
+      company_name: "Cinkod Technologies Pvt. Ltd",
+      icon: cinkod,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+        "Ensure initiatives align with Cinkods vision and board decisions, fostering collaboration and inclusivity. Develop and execute strategies for community growth and expansion across India.",
+        "Leading the community management team to build and maintain a vibrant online community for a global car rental company.",
+  ],
+}
+    // {
+    //   title: "React.js Developer",
+    //   company_name: "Starbucks",
+    //   icon: starbucks,
+    //   iconBg: "#383E56",
+    //   date: "March 2020 - April 2021",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    //},
+    
   ];
   
   const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://media.licdn.com/dms/image/D5603AQElsM-i3mqWsg/profile-displayphoto-shrink_800_800/0/1720179121199?e=1725494400&v=beta&t=3PkvVbMmpw2X7UiZUVaEQQ1VNxrZveuN1hmMGwUVdLY",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    // {
+    //   testimonial:
+    //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    //   name: "Sara Lee",
+    //   designation: "CFO",
+    //   company: "Acme Co",
+    //   image: "https://media.licdn.com/dms/image/D5603AQElsM-i3mqWsg/profile-displayphoto-shrink_800_800/0/1720179121199?e=1725494400&v=beta&t=3PkvVbMmpw2X7UiZUVaEQQ1VNxrZveuN1hmMGwUVdLY",
+    // },
+    
   ];
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
+      name: "Expense Tracker",
+      description: "Developed a scalable expense tracker with Node.js, Express.js, JWT authentication, and MongoDB, achieving a 30% response time improvement after cloud deployment. Included user-friendly categorization and collaborated via GitHub.",
+      tags : [
         {
-          name: "react",
+          name: "nodejs",
           color: "blue-text-gradient",
+        },
+        {
+          name: "express.js",
+          color: "green-text-gradient",
         },
         {
           name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
           color: "pink-text-gradient",
         },
+        // {
+        //   name: "jwt",
+        //   color: "purple-text-gradient",
+        // },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: github,
+      
+      source_code_link: "https://github.com/0127aryan/Expense_tracker_pro",
+      
+      deployment_link: 'https://expense-tracker-pro-1-h6dy.onrender.com'
     },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Car Rent",
+    //   description:
+    //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    //   tags: [
+    //     {
+    //       name: "react",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "mongodb",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "tailwind",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: carrent,
+    //   source_code_link: "https://github.com/",
+    // },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

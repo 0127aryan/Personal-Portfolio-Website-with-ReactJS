@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { BrowserRouter,Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -27,6 +27,13 @@ const Navbar = () => {
           <p className='text-white text-[18px] font-bold cursor-pointer'>Aryan Khandelwal &nbsp;
              <span className="sm:block hidden" >  Mern Stack Developer</span></p>
         </Link>
+
+        <Link
+        to = "/resume"
+         className='bg-secondary hover:bg-secondary-dark text-white font-bold py-2 px-4 rounded right-0' >
+          Check Resume
+        </Link>
+        
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map ((Link) => {
             return (

@@ -28,18 +28,16 @@ const ExperienceCard = ({ experience }) => {
         <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0}}> {experience.company_name} </p>
       </div>
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => {
-          return (
-          <li key={'experience-point-${index}'}
-          className="text-white-100 text-[14px] pl-1 tracking-wider"
-          >
-            {point}
-
-
-          </li>
-        )})}
-
-      </ul>
+  {experience.points.map((point, index) => {
+    return (
+      <li key={`${experience.id}-${index}-${point.replace(/\s+/g, '-')}`}
+        className="text-white-100 text-[14px] pl-1 tracking-wider"
+      >
+        {point}
+      </li>
+    );
+  })}
+</ul>
     </VerticalTimelineElement>
   );
 };
@@ -47,10 +45,8 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}> What I have done so far </p>
-        <h2 className={styles.sectionHeadText}> Work Experience </h2>
-      </motion.div>
+      <p className={styles.sectionSubText}> What I have done so far </p>
+      <motion.h2 variants={textVariant()} className={styles.sectionHeadText}> Work Experience </motion.h2>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => {

@@ -29,6 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cinkod from './tech/cinkod.png';
+import vercel from './tech/vercel.png'
+import deployment_link from '../components/Works'
 
 export {
   logo,
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  cinkod,
+  vercel,
+  deployment_link,
 };

@@ -6,8 +6,9 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import {vercel} from '../assets';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_Link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_Link, deployed_Link}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt 
@@ -34,9 +35,23 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_Link }
                 alt='github'
                 className='w-1/2 object-contain h-1/2' 
               /> 
+
+            </div>
+            <div
+              onClick={() => window.open(deployed_Link, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2'
+            >
+              <img 
+              src='{vercel}'
+              alt='vercel'
+              className='w-1/2 object-contain h-1/2'
+              />
             </div>
           </div>
         </div>
+            
+          
+       
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
