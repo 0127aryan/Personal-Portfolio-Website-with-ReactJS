@@ -73,11 +73,11 @@ const Navbar = () => {
             )
           })}
           {/* Add a new link to the Resume component */}
-          {/* <li>
+          <li>
             <Link to= 'https://drive.google.com/file/d/1jDEVvePG3ypNRBLZQYOB3lviKXgFWEOW/view?usp=sharing'  className='text-secondary hover:text-white text-[16px] font-medium cursor-pointer'>
               
             </Link>
-          </li> */}
+          </li>
         </ul>
           </div>
 
