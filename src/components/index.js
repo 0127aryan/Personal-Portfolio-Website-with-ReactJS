@@ -7,7 +7,7 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
-import Resume from './resume';
+import resume from './resume';
 import Home from './Home';
 
 export {
@@ -23,6 +23,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Resume,
+  resume,
   Home
 }

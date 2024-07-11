@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { BrowserRouter,Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
+import resume from './resume'; // Import the Resume component
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -27,19 +28,13 @@ const Navbar = () => {
           <p className='text-white text-[18px] font-bold cursor-pointer'>Aryan Khandelwal &nbsp;
              <span className="sm:block hidden" >  Mern Stack Developer</span></p>
         </Link>
-
-        <Link
-        to = "/resume"
-         className='bg-secondary hover:bg-secondary-dark text-white font-bold py-2 px-4 rounded right-0' >
-          Check Resume
-        </Link>
         
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map ((Link) => {
             return (
               <li
                 key={Link.id}
-                className={`${active === Link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+                className={`${active === Link.title? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 setActive(Link.title)
               }}
@@ -48,10 +43,16 @@ const Navbar = () => {
               </li>
             )
           })}
+          {/* Add a new link to the Resume component */}
+          <li>
+            <Link to='https://drive.google.com/file/d/1jDEVvePG3ypNRBLZQYOB3lviKXgFWEOW/view?usp=sharing' className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+              Resume
+            </Link>
+          </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img 
-          src={toggle ? close : menu }
+          src={toggle? close : menu }
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle(!toggle) }
           />
@@ -61,7 +62,7 @@ const Navbar = () => {
             return (
               <li
                 key={Link.id}
-                className={`${active === Link.title ? "text-white" : "text-secondary"}font-poppins font-medium cursor-pointer text-[16px]`}
+                className={`${active === Link.title? "text-white" : "text-secondary"}font-poppins font-medium cursor-pointer text-[16px]`}
               onClick={() => {
                 setToggle(!toggle);
                 setActive(Link.title);
@@ -71,6 +72,12 @@ const Navbar = () => {
               </li>
             )
           })}
+          {/* Add a new link to the Resume component */}
+          {/* <li>
+            <Link to= 'https://drive.google.com/file/d/1jDEVvePG3ypNRBLZQYOB3lviKXgFWEOW/view?usp=sharing'  className='text-secondary hover:text-white text-[16px] font-medium cursor-pointer'>
+              
+            </Link>
+          </li> */}
         </ul>
           </div>
 
