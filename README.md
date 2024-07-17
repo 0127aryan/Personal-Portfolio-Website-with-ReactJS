@@ -1,8 +1,66 @@
-# React + Vite
+# Personal Portfolio Website with ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Personal Portfolio Website repository! This project showcases a modern and responsive portfolio website built with ReactJS, highlighting your skills, projects, and professional experience.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+
+- **Responsive Design**: Optimized for all devices.
+- **Modern UI**: Clean and stylish design.
+- **Project Showcase**: Display your projects with descriptions and links.
+- **About Me Section**: Highlight your skills and experience.
+- **Contact Form**: Allow visitors to get in touch.
+
+## 📦 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/0127aryan/Personal-Portfolio-Website-with-ReactJS.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd Personal-Portfolio-Website-with-ReactJS
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the application:**
+   ```bash
+   npm start
+   ```
+
+## 🛠️ Technologies Used
+
+- **Frontend:** ReactJS, Tailwind CSS
+- **Build Tool:** Vite
+
+## 📁 Folder Structure
+
+- **public/**: Static assets
+- **src/**: Source code
+  - **components/**: Reusable UI components
+  - **pages/**: Page components
+  - **styles/**: Styling files
+- **.eslintrc.cjs**: ESLint configuration
+- **vite.config.js**: Vite configuration
+
+## 🤝 Contributing
+
+We welcome contributions! To contribute:
+
+1. **Fork the repository.**
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. **Commit your changes:**
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature-branch
+   ```
+5. **Open a pull request.**
+
